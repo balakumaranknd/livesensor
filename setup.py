@@ -1,9 +1,9 @@
 from setuptools import find_packages, setup
 from typing import List
 
-def get_requirements()->list[str]:
+def get_requirements()->List[str]:
 
-    requrements_list = list[str] = []
+    requirements_list : List[str] = []
 
     return requirements_list
 
@@ -14,7 +14,7 @@ setup(
     version = "0.0.1",
     author = "Balakumaran",
     author_email = "balakumaranknd@gmail.com",
-    packages = find_packages()
-    install_requires = get_requirements(), #["pymongo"]
+    packages = find_packages(),
+    install_requires = get_requirements(), #["pymongo==4.2.0"]
 
 )
